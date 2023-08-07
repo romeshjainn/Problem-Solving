@@ -1,3 +1,14 @@
+Chirag Arora8:39 AM
+brb
+Sachin Srivastava8:41 AM
+console.log(0.1+0.2==0.3)
+Vidhya Skill School8:42 AM
+0.1+0.2
+Sushmitha Bhat8:43 AM
+0.30000000000000004
+Sachin Srivastava8:45 AM
+console.log(1 && 2)
+Vidhya Skill School8:47 AM
 var x = 10;
 
 function foo() {
@@ -214,3 +225,21 @@ console.log(x);
 console.log(z);
 Vidhya Skill School9:45 AM
 let a = b = 10
+Vidhya Skill School9:47 AM
+window.a = 10
+Vidhya Skill School9:52 AM
+function foo() {
+  console.log(a);
+  var a = 10;
+  console.log(a);
+}
+
+foo();
+Vidhya Skill School9:55 AM
+function foo() {
+  console.log(a);
+  let a = 10;
+  console.log(a);
+}
+
+foo();

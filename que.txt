@@ -1,0 +1,176 @@
+// 07 Aug 2023 ques
+
+// 1
+var x = 10;
+
+function foo() {
+  console.log(x);
+}
+
+function bar() {
+  var x = 20;
+  foo();
+}
+
+bar();
+
+
+// 2
+var name = "Alice";
+
+function greet() {
+  console.log("Hello, " + name + "!");
+}
+
+function changeName() {
+  var name = "Bob";
+  greet();
+}
+
+changeName();
+
+
+
+// 3
+var name = "Alice";
+
+function greet() {
+  console.log("Hello, " + name + "!");
+}
+
+function changeName() {
+  name = "Bob";
+  greet();
+}
+
+changeName();
+
+
+
+// 4
+var a = 5;
+
+function outer() {
+  var b = 10;
+
+  function inner() {
+    var c = 15;
+    console.log(a + b + c);
+  }
+
+  inner();
+}
+
+outer();
+
+
+// 5
+var a = 5;
+
+function outer() {
+  var b = 10;
+
+  function inner() {
+    var c = 15;
+    console.log(a + b + c);
+  }
+
+  inner();
+}
+
+outer();
+
+// 6
+var a = 5;
+
+function outer() {
+  var b = 10;
+
+  function inner() {
+    var c = 15;
+    console.log(a + b + c);
+    var a = 10;
+  }
+
+  inner();
+}
+
+outer();
+
+
+// 7
+var a = 5;
+
+function outer() {
+  var b = 10;
+
+  function inner() {
+    var c = 15;
+    console.log(a + b + c);
+    let a = 10;
+  }
+
+  inner();
+}
+
+outer();
+
+
+// 8
+let x = 5;
+
+function example() {
+  console.log(x);
+
+  if (true) {
+    let x = 10;
+    const y = 15;
+    console.log(x + y);
+  }
+
+  console.log(x);
+}
+
+example();
+console.log(x);
+
+
+// 9
+let x = 5;
+
+function example() {
+  console.log(x);
+
+  if (true) {
+    x = 10;
+    const y = 15;
+    z = 20;
+    console.log(x + y + z);
+  }
+
+  console.log(x);
+}
+
+example();
+console.log(x);
+console.log(z);
+
+
+// 10
+function foo() {
+  console.log(a);
+  var a = 10;
+  console.log(a);
+}
+
+foo();
+
+
+// 11
+function foo() {
+  console.log(a);
+  let a = 10;
+  console.log(a);
+}
+
+foo();
