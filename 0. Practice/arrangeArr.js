@@ -8,6 +8,7 @@ function arrangeArr(arr) {
 
   arr = [];
   for (let key in obj) {
+    // console.log(key)
     for (let i = 0; i < obj[key]; i++) {
       arr.push(parseInt(key));
     }
