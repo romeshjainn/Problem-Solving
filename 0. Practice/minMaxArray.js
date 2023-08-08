@@ -19,5 +19,5 @@ function minMax(nums) {
     console.log("Minimum:", minimum)
     console.log("Maximum:", maximum);
 }
-
+let nums = [1, 2, 3, 4, 5];
 minMax(nums);
