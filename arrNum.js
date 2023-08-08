@@ -20,3 +20,6 @@ function arrangeArr(arr) {
 
 let result = arrangeArr(arr);
 console.log(result);
+
+// Output 
+// [1, 1, 1, 1, 1, 1, 1, 1, 1, 0, 0, 0, 0, 0, 0, 0, 0];
