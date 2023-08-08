@@ -1,19 +1,21 @@
-function character(str) {
-  outerLoop: for (let i = 0; i < str.length; i++) {
-    const current = str[i];
+let arr = [1, 2, 9, 4, 5];
+let store = 0;
+let currentNum = 0;
+let store2 = 0;
 
-    for (let j = i + 1; j < str.length; j++) {
-      const last = str[j];
-      if (current === last) {
-        continue outerLoop;
-      }
-    }
-
-    return current;
+for (let i = 0; i < arr.length; i++) {
+  currentNum = arr[i];
+  if (store < currentNum) {
+    store = currentNum;
   }
-
-  return null;
+}
+arr.pop(store);
+for (let j = 0; j < arr.length; j++) {
+  if (store2 < arr[j]) {
+    store2 = arr[j];
+  }
 }
 
-const str = "cbcbdde";
-console.log(character(str));
+console.log(store2);
+// console.log(arr);
+// console.log(store);
