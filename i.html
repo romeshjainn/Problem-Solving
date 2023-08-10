@@ -1,39 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
+  </head>
+  <body>
     <input type="text" id="input" />
     <button id="btn">Click me</button>
     <script>
-        let btn = document.getElementById("btn");
-        let store = "";
-        btn.onclick = function() {
-            let input = document.getElementById("input").value;
+        // let btn = document.getElementById("btn");
+        // let store = "";
+        // btn.onclick = function() {
+        //     let input = document.getElementById("input").value;
 
-            input = input.split("");
-            console.log(input)
-            document.addEventListener("keydown", function(event) {
-                if (event.keyCode === 8) {
-                    store += input.pop();
-                    store.split("");
-                    console.log(store);
-                    console.log(input);
-                    
-                }
-                if (event.keyCode === 13) {
-                    input.push(store)
-                    String(input);
-                    console.log(input);
-                    
-                    
-                }
-                 
-            });
-        };
+        //     input = input.split("");
+        //     console.log(input)
+        //     document.addEventListener("keydown", function(event) {
+        //         if (event.keyCode === 8) {
+        //             store += input.pop();
+        //             store.split("");
+        //             console.log(store);
+        //             console.log(input);
+
+        //         }
+        //         if (event.keyCode === 13) {
+        //             input.push(store)
+        //             String(input);
+        //             console.log(input);
+
+        //         }
+
+        //     });
+        // };
+
+        input.oninput = function () {
+            let input = document.getElementById("input").value.split("");
+            let store = "";
+            
+            //   console.log(input)
+            
+            document.addEventListener("keydown", function (event) {
+          if (event.keyCode === 8) {
+            store = store + input.pop();
+            // store.split("");
+            //   console.log(input);
+        }
+        console.log(store);
+        });
+
+        //   console.log(input)
+      };
     </script>
-</body>
+  </body>
 </html>
