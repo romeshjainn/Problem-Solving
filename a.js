@@ -14,10 +14,10 @@ function check(arr, num) {
             // console.log(store)
       }
     }
+    store = null;
 
     let elemIndex = arr.indexOf(store);
       arr.splice(elemIndex, 1);
-    //   console.log(arr)
     }
     
   let largestNum = arr[0];
@@ -33,3 +33,19 @@ function check(arr, num) {
 // console.log(arr);
 console.log(check(arr, num));
 
+// const array = [1, 3, 5, 2, 6, 7, 4];
+// const obj = {};
+
+// for (let i = 0; i < array.length; i++) {
+//   obj[i] = obj.hasOwnPropery(i) ? obj[i]++ : 1;
+// }
+
+// console.log(obj);
+// const array = [1, 3, 5, 2, 6, 7, 4];
+// const obj = {};
+
+// for (let i = 0; i < array.length; i++) {
+//   obj[i] = obj.hasOwnPropery(i) ? obj[i] + 1 : 1;
+// }
+
+// console.log(obj);
