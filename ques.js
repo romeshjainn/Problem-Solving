@@ -27,7 +27,10 @@ const data = [
   },
 ];
 
-const newColor = data.filter((element) => colors.includes(element.color));
+const newColor = data.filter(function (element) {
+  return colors.includes(element.color);
+});
+
 console.log(newColor);
 
 // function color(colors, data) {
