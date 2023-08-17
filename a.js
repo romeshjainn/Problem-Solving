@@ -1,7 +1,5 @@
 let arr = [5, 2, 3, 1, 6, 7];
 let num = 4;
-// let a = (arr.length - 1) / 2;
-// a = Math.ceil(a);
 let store = 0;
 
 function check(arr, num) {
@@ -11,10 +9,8 @@ function check(arr, num) {
     for (let j = 1; j < arr.length; j++) {
       if (store < arr[j]) {
           store = arr[j];
-            // console.log(store)
       }
     }
-    store = null;
 
     let elemIndex = arr.indexOf(store);
       arr.splice(elemIndex, 1);
@@ -30,7 +26,6 @@ function check(arr, num) {
 }
 
 
-// console.log(arr);
 console.log(check(arr, num));
 
 // const array = [1, 3, 5, 2, 6, 7, 4];
