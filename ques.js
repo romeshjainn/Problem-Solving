@@ -31,10 +31,10 @@ const data = [
 // const newColor = data.filter(function (element) {
 //   return colors.includes(element.color);
 // });
+// console.log(newColor);
 
 const newColor = data.filter((element) => colors.includes(element.color));
 console.log(newColor)
-// console.log(newColor);
 
 // function color(colors, data) {
 //   const newColor = [];
