@@ -6,7 +6,7 @@ const data = [
     color: "red",
     name: "John",
     city: "New York",
-  },
+  },    
   {
     id: 2,
     color: "blue",
@@ -26,16 +26,16 @@ const data = [
     city: "Houston",
   },
 ];
-
-
-// const newColor = data.filter(function (element) {
-//   return colors.includes(element.color);
-// });
-// console.log(newColor);
-
+// 1 
 const newColor = data.filter((element) => colors.includes(element.color));
 console.log(newColor)
 
+// 2
+// const newColor = data.filter(function (element) {
+//   return colors.includes(element.color);
+// });
+
+// 3
 // function color(colors, data) {
 //   const newColor = [];
 
@@ -47,3 +47,4 @@ console.log(newColor)
 
 //   return newColor;
 // }
+// console.log(newColor);
