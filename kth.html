@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      let nums = [1, 2, 3, 4, 4, -1, -8, -3];
+      let k = 3;
+      let positive = [];
+      let negative = [];
+
+      const kth = (nums, k) => {
+        for (let i = 0; i < nums.length; i++) {
+          if (nums[i] >= 0) {
+            positive.push(null);
+            if (!positive[nums[i]]) {
+              positive[nums[i]] = 1;
+            } else {
+              positive[nums[i]] += 1;
+            }
+          } else {
+            negative.push(null);
+            if (!negative[-nums[i]]) {
+              negative[-nums[i]] = 1;
+            } else {
+              negative[-nums[i]] += 1;
+            }
+          }
+        }
+        console.log(positive);
+        console.log(negative);
+      };
+      kth(nums, k);
+    </script>
+  </body>
+</html>
