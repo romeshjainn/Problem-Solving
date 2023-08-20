@@ -33,7 +33,7 @@ const kth = (nums, k) => {
 
   for (let j = negative.length - 1; j >= 0; j--) {
     if (negative[j] !== undefined) {
-      count += negative[j];
+      count += negative[j]; 
       if (count >= k) {
         console.log(-j);
         return;
