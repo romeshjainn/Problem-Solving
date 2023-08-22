@@ -5,7 +5,7 @@
 // storing the index of closing bracket in the closing array
 // return false if the indexes dont match
 // coz the opening and closing bracket's index is same in both arrays
-// returing true, the brackets have their pair 
+// returing true, if the store array has length of 0, coz we popped the pair
 
 const isValid = (brackets) => {
   let opening = ["{", "(", "["];
