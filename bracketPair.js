@@ -38,5 +38,6 @@ const isValid = (brackets) => {
   // console.log("store", store);
 };
 
-const brackets = "{{}()[]}{";
+// const brackets = "{{}()[]}{";
+const brackets = "(([]){})";
 console.log(isValid(brackets));
