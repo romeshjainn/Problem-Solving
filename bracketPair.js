@@ -39,5 +39,5 @@ const isValid = (brackets) => {
 };
 
 // const brackets = "{{}()[]}{";
-const brackets = "(([]){})";
+const brackets = "(([{}()])))(";
 console.log(isValid(brackets));
