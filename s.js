@@ -10,3 +10,4 @@ const removeElement = (nums, val) => {
 let nums = [3, 2, 2, 3];
 let val = 3;
 console.log(removeElement(nums, val));
+//
