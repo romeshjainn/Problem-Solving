@@ -1,3 +1,0 @@
-const sortBy = (arr, fn) => {
-
-};
